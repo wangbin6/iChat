@@ -1,0 +1,172 @@
+html,body
+{
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑';
+    height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    width: 800px;
+    height: 700px;
+    top:20px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.4);
+}
+#tools{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /*border: 1px solid blue;*/
+}
+.middle{
+    position: relative;
+    width: 98%;
+    height: 400px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#messages{
+    position: relative;
+    width: 77%;
+    height:400px;
+    float: left;
+    background-color: azure;
+    overflow-y: auto;
+}
+.users{
+    position: relative;
+    width: 20%;
+    height:400px;
+    float: right;
+    background-color: azure;
+}
+.input{
+    position: relative;
+    width: 98%;
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.chatPlus{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+}
+.text{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: azure;
+}
+.send{
+    position: relative;
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+}
+.text textarea{
+    width: 99%;
+    height: 150px;
+    resize: none;/*禁止textare改变大小*/
+}
+
+/*提示输入昵称区域*/
+.inputNickNameArea{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+.myPrompt{
+    position: relative;
+    width: 400px;
+    height:250px;
+    margin: 200px auto 0 auto;
+    background-color: azure;
+    border-radius: 5px;
+}
+.myPromptTitle{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.myPromptInput{
+    width: 100%;
+    height: auto;
+}
+.myPromptInput input{
+    width: 80%;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+.myPromptEnterBtn{
+    float: right;
+    padding-right: 40px;
+}
+
+#createNickBtn{
+    width: 60px;
+    height: 28px;
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: '微软雅黑';
+}
+#createNickSuccessTip{
+    position: absolute;
+    left: 40%;
+    width: 180px;
+    height:auto;
+    text-align: center;
+    background-color: #ff804a;
+}
+#onlineCount{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    border-bottom: 1px solid cadetblue;
+}
+#onlineList{
+    width: 100%;
+    height: 100%;
+}
+.chatPlus img{
+    height: 26px;
+}
+.chatPlus ul{
+    padding-left: 15px;
+    list-style: none;
+}
+.chatPlus ul li{
+    cursor: pointer;
+    float: left;
+}
+/*表情待选区域*/
+#mojisArea{
+    position: relative;
+    width: 100%;
+    height:auto;
+    background-color: rosybrown;
+    bottom: 0;
+    overflow: hidden;
+}
+#mojisArea table tr td{
+    border: solid 1px black;
+}
+#mojisArea table tr td img{
+    cursor: pointer;
+}
+#mojisArea table tr td:hover{
+    border: green solid 1px;
+}

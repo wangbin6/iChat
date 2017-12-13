@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iChart 爱上聊天</title>
+    <link rel="icon" href="/public/images/favicon.png" />
+    <link href="/public/styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--聊天窗口-->
+<div class="container" id="iChat">
+    <!--工具栏-->
+    <div id="tools">
+        <div id="marquee"></div>
+    </div>
+
+    <!--聊天消息显示区域及在线用户显示区-->
+    <div class="middle">
+        <!--聊天消息显示区域-->
+        <div id="messages">
+
+            <!--表情包显示区域-->
+            <div id="mojisArea" style="display: none;">
+                <table id="mojisAreaTable">
+                </table>
+            </div>
+
+        </div>
+
+        <!--用户显示区域-->
+        <div class="users">
+            <div id="onlineCount">当前在线人数(<span id="onlineNum">0</span>)</div>
+            <div id="onlineList"></div>
+        </div>
+    </div>
+
+    <!--输入框-->
+    <div class="input">
+        <!--表情输入-->
+        <div class="chatPlus">
+            <ul>
+                <li><img src="/public/images/moji.png" id="moji" title="表情图标"></li>
+            </ul>
+        </div>
+
+        <!--文字输入-->
+        <div class="text">
+            <textarea id="inputText"></textarea>
+        </div>
+    </div>
+
+    <!--发送按钮区-->
+    <div class="send">
+        <button id="sendBtn">发送</button>
+        <button id="clearBtn">清空</button>
+    </div>
+</div>
+
+<!--提示输入昵称区域-->
+<div class="inputNickNameArea" id="Nick">
+    <div class="myPrompt">
+        <div class="myPromptTitle">提示！你还没有昵称，请创建昵称：</div>
+        <div class="myPromptInput"><input id="myPromptInputVal"/></div>
+        <div class="myPromptEnterBtn"><button id="createNickBtn">创建</button></div>
+    </div>
+</div>
+
+<!--创建昵称成功后的提示-->
+<!--<div id="createNickSuccessTip">恭喜！<br>创建成功,开始聊天吧...</div>-->
+</body>
+<script src="/public/js/function_utils.js" type="text/javascript"></script>
+<script src="/public/js/socket.io.js" type="text/javascript"></script>
+<script src="/public/js/index.js" type="text/javascript"></script>
+</html>
