@@ -154,11 +154,11 @@ html,body
 }
 /*表情待选区域*/
 #mojisArea{
-    position: relative;
+    position: absolute;
     width: 100%;
     height:auto;
     background-color: rosybrown;
-    bottom: 0;
+    bottom: 0px;
     overflow: hidden;
 }
 #mojisArea table tr td{
