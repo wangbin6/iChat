@@ -15,6 +15,8 @@ var nickFlag = true;
 var fasesjsonObj = null;
 //表情title存储，用于匹配表情title，转换成表情图片显示在聊天框
 var facesTitlesArr = [];
+//消息显示区域滚动条的距离
+var messagesScrollTop = 0;
 
 /*
  *获取页面操作对象
@@ -71,6 +73,12 @@ sendBtn.addEventListener("click", sendBtnClick,false);
 clearBtn.addEventListener("click", clearBtnClick,false);
 createNickBtn.addEventListener("click", setCookieNickName, false);
 moji.addEventListener("click", showMojiArea,false);
+inputArea.addEventListener("click",inputAreaClick,false);
+
+//监听messages的滚动条位置变化，处理表情框定位问题
+messages.onscroll = function (e) {
+    messagesScrollTop = messages.scrollTop;
+}
 
 //初始化socket句柄
 function initConnect()
@@ -389,8 +397,6 @@ function init_ifaces()
         //初始化表情选中事件，选中后将表情的title输出到textarea中
         initFacesClick();
     });
-
-    mojisArea.addEventListener("click",mojisAreaCLick,false);
 }
 
 //初始化聊天表情点击事件
@@ -402,16 +408,12 @@ function initFacesClick()
         (function(i){
             faces[i].addEventListener("click",function () {
                 var title = this.getAttribute("title");
-                inputText.value += title;
+                inputText.value += title;//将表情标题输出到消息发送区
+                mojisArea.style.display = 'none';//隐藏表情区域
+                moji.setAttribute("src","/public/images/moji.png");//修改表情区域开关图标
             });
         })(i);
     }
-}
-
-//表情区域的隐藏与显示
-function mojisAreaCLick()
-{
-    mojisArea.style.display = 'block';
 }
 
 //关闭页面处理函数
@@ -429,6 +431,7 @@ function showMojiArea() {
     else
     {
         mojisArea.style.display = 'block';
+        mojisArea.style.bottom = -messagesScrollTop+'px';
         moji.setAttribute("src","/public/images/moji_active.png");
     }
 
@@ -438,6 +441,16 @@ function showMojiArea() {
 function initChartPlusPngChange()
 {
 
+}
+
+//当点击textare时隐藏表情区域
+function inputAreaClick()
+{
+    if(mojisArea.style.display=="block")
+    {
+        mojisArea.style.display="none";
+        moji.setAttribute("src","/public/images/moji.png");
+    }
 }
 
 Notification.requestPermission( function(status) {

@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="157" column="16" lean-forward="true" selection-start-line="157" selection-start-column="16" selection-end-line="157" selection-end-column="16" />
+            <state relative-caret-position="399">
+              <caret line="159" column="32" lean-forward="false" selection-start-line="159" selection-start-column="32" selection-end-line="159" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -94,23 +94,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1881">
-              <caret line="209" column="11" lean-forward="false" selection-start-line="209" selection-start-column="11" selection-end-line="209" selection-end-column="11" />
+            <state relative-caret-position="-22">
+              <caret line="419" column="28" lean-forward="true" selection-start-line="419" selection-start-column="28" selection-end-line="419" selection-end-column="28" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#initConnect#0" expanded="false" />
-                <element signature="e#2167#5052#0" expanded="false" />
-                <element signature="e#5231#5779#0" expanded="false" />
-                <element signature="e#5838#6638#0" expanded="false" />
+                <element signature="e#2380#5265#0" expanded="false" />
+                <element signature="e#5444#5992#0" expanded="false" />
+                <element signature="e#6051#6851#0" expanded="false" />
                 <element signature="n#!!block;n#initNickName#0" expanded="false" />
                 <element signature="n#!!block;n#setCookieNickName#0" expanded="false" />
                 <element signature="n#!!block;n#getcookieNickName#0" expanded="false" />
                 <element signature="n#!!block;n#initEnterKey#0" expanded="false" />
                 <element signature="n#!!block;n#init_app#0" expanded="false" />
-                <element signature="n#!!block;n#showMojiArea#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -119,8 +118,8 @@
       <file leaf-file-name="function_utils.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/function_utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1615">
-              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="415">
+              <caret line="96" column="12" lean-forward="true" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -154,6 +153,9 @@
       <find>类名</find>
       <find>messages</find>
       <find>mojisArea</find>
+      <find>messagesScrollTop</find>
+      <find>inputArea</find>
+      <find>mojisAreaCLick</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -165,9 +167,9 @@
         <option value="$PROJECT_DIR$/utils/socketio.js" />
         <option value="$PROJECT_DIR$/utils/mysql.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/styles/style.css" />
         <option value="$PROJECT_DIR$/public/js/function_utils.js" />
         <option value="$PROJECT_DIR$/public/js/index.js" />
-        <option value="$PROJECT_DIR$/public/styles/style.css" />
       </list>
     </option>
   </component>
@@ -326,7 +328,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/js/index.js</url>
-          <line>76</line>
+          <line>84</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -397,15 +399,14 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#initConnect#0" expanded="false" />
-            <element signature="e#2167#5052#0" expanded="false" />
-            <element signature="e#5231#5779#0" expanded="false" />
-            <element signature="e#5838#6638#0" expanded="false" />
+            <element signature="e#2380#5265#0" expanded="false" />
+            <element signature="e#5444#5992#0" expanded="false" />
+            <element signature="e#6051#6851#0" expanded="false" />
             <element signature="n#!!block;n#initNickName#0" expanded="false" />
             <element signature="n#!!block;n#setCookieNickName#0" expanded="false" />
             <element signature="n#!!block;n#getcookieNickName#0" expanded="false" />
             <element signature="n#!!block;n#initEnterKey#0" expanded="false" />
             <element signature="n#!!block;n#init_app#0" expanded="false" />
-            <element signature="n#!!block;n#showMojiArea#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -475,15 +476,14 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#initConnect#0" expanded="false" />
-            <element signature="e#2167#5052#0" expanded="false" />
-            <element signature="e#5231#5779#0" expanded="false" />
-            <element signature="e#5838#6638#0" expanded="false" />
+            <element signature="e#2380#5265#0" expanded="false" />
+            <element signature="e#5444#5992#0" expanded="false" />
+            <element signature="e#6051#6851#0" expanded="false" />
             <element signature="n#!!block;n#initNickName#0" expanded="false" />
             <element signature="n#!!block;n#setCookieNickName#0" expanded="false" />
             <element signature="n#!!block;n#getcookieNickName#0" expanded="false" />
             <element signature="n#!!block;n#initEnterKey#0" expanded="false" />
             <element signature="n#!!block;n#init_app#0" expanded="false" />
-            <element signature="n#!!block;n#showMojiArea#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -579,15 +579,14 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#initConnect#0" expanded="false" />
-            <element signature="e#2167#5052#0" expanded="false" />
-            <element signature="e#5231#5779#0" expanded="false" />
-            <element signature="e#5838#6638#0" expanded="false" />
+            <element signature="e#2380#5265#0" expanded="false" />
+            <element signature="e#5444#5992#0" expanded="false" />
+            <element signature="e#6051#6851#0" expanded="false" />
             <element signature="n#!!block;n#initNickName#0" expanded="false" />
             <element signature="n#!!block;n#setCookieNickName#0" expanded="false" />
             <element signature="n#!!block;n#getcookieNickName#0" expanded="false" />
             <element signature="n#!!block;n#initEnterKey#0" expanded="false" />
             <element signature="n#!!block;n#init_app#0" expanded="false" />
-            <element signature="n#!!block;n#showMojiArea#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -677,15 +676,14 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#initConnect#0" expanded="false" />
-            <element signature="e#2167#5052#0" expanded="false" />
-            <element signature="e#5231#5779#0" expanded="false" />
-            <element signature="e#5838#6638#0" expanded="false" />
+            <element signature="e#2380#5265#0" expanded="false" />
+            <element signature="e#5444#5992#0" expanded="false" />
+            <element signature="e#6051#6851#0" expanded="false" />
             <element signature="n#!!block;n#initNickName#0" expanded="false" />
             <element signature="n#!!block;n#setCookieNickName#0" expanded="false" />
             <element signature="n#!!block;n#getcookieNickName#0" expanded="false" />
             <element signature="n#!!block;n#initEnterKey#0" expanded="false" />
             <element signature="n#!!block;n#init_app#0" expanded="false" />
-            <element signature="n#!!block;n#showMojiArea#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -755,15 +753,14 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#initConnect#0" expanded="false" />
-            <element signature="e#2167#5052#0" expanded="false" />
-            <element signature="e#5231#5779#0" expanded="false" />
-            <element signature="e#5838#6638#0" expanded="false" />
+            <element signature="e#2380#5265#0" expanded="false" />
+            <element signature="e#5444#5992#0" expanded="false" />
+            <element signature="e#6051#6851#0" expanded="false" />
             <element signature="n#!!block;n#initNickName#0" expanded="false" />
             <element signature="n#!!block;n#setCookieNickName#0" expanded="false" />
             <element signature="n#!!block;n#getcookieNickName#0" expanded="false" />
             <element signature="n#!!block;n#initEnterKey#0" expanded="false" />
             <element signature="n#!!block;n#init_app#0" expanded="false" />
-            <element signature="n#!!block;n#showMojiArea#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -819,36 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/function_utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1881">
-          <caret line="209" column="11" lean-forward="false" selection-start-line="209" selection-start-column="11" selection-end-line="209" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#initConnect#0" expanded="false" />
-            <element signature="e#2167#5052#0" expanded="false" />
-            <element signature="e#5231#5779#0" expanded="false" />
-            <element signature="e#5838#6638#0" expanded="false" />
-            <element signature="n#!!block;n#initNickName#0" expanded="false" />
-            <element signature="n#!!block;n#setCookieNickName#0" expanded="false" />
-            <element signature="n#!!block;n#getcookieNickName#0" expanded="false" />
-            <element signature="n#!!block;n#initEnterKey#0" expanded="false" />
-            <element signature="n#!!block;n#init_app#0" expanded="false" />
-            <element signature="n#!!block;n#showMojiArea#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -871,9 +838,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="157" column="16" lean-forward="true" selection-start-line="157" selection-start-column="16" selection-end-line="157" selection-end-column="16" />
+        <state relative-caret-position="399">
+          <caret line="159" column="32" lean-forward="false" selection-start-line="159" selection-start-column="32" selection-end-line="159" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/function_utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="96" column="12" lean-forward="true" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="419" column="28" lean-forward="true" selection-start-line="419" selection-start-column="28" selection-end-line="419" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#initConnect#0" expanded="false" />
+            <element signature="e#2380#5265#0" expanded="false" />
+            <element signature="e#5444#5992#0" expanded="false" />
+            <element signature="e#6051#6851#0" expanded="false" />
+            <element signature="n#!!block;n#initNickName#0" expanded="false" />
+            <element signature="n#!!block;n#setCookieNickName#0" expanded="false" />
+            <element signature="n#!!block;n#getcookieNickName#0" expanded="false" />
+            <element signature="n#!!block;n#initEnterKey#0" expanded="false" />
+            <element signature="n#!!block;n#init_app#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

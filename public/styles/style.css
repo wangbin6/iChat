@@ -160,6 +160,7 @@ html,body
     background-color: rosybrown;
     bottom: 0px;
     overflow: hidden;
+    border-radius: 5px;
 }
 #mojisArea table tr td{
     border: solid 1px black;

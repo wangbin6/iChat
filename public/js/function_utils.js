@@ -93,3 +93,10 @@ function scrollToBottom(div)
 {
     div.scrollTop = div.scrollHeight;
 }
+
+//去除css属性的单位
+function setDelCssUnit(val,unit)
+{
+    if(val=="")return val;
+    return val.replace(unit,"");
+}
