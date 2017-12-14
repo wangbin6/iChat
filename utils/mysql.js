@@ -3,17 +3,21 @@
 * @author WangBin
 * @time 2017.12.07
 * */
-var mysql = require("mysql");
+var mysqld = require("mysql");
+var functions = require("./functions");
 
 var connection = null;
 //连接数据库
 function connectMysql()
 {
-    connection = mysql.createConnection({
-        host:'localhost',
-        user:'root',
-        password:'ltech',
-        database:'ltivalley20'
+    //读取数据库配置文件
+    var databaseJson = functions.readJsonFile("./config/database.json",true);
+
+    connection = mysqld.createConnection({
+        host:databaseJson.host,
+        user:databaseJson.user,
+        password:databaseJson.root,
+        database:databaseJson.database
     });
 
     connection.connect();
