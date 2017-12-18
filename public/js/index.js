@@ -238,7 +238,7 @@ function socketSendSys(state)
 //发送消息
 function sendBtnClick() {
     var text = inputArea.value;
-
+    mojisArea.style.display = 'none';//隐藏表情包区域
     if(text == "")
     {
         //设置输入框placeholder属性

@@ -16,7 +16,7 @@ function connectMysql()
     connection = mysqld.createConnection({
         host:databaseJson.host,
         user:databaseJson.user,
-        password:databaseJson.root,
+        password:databaseJson.password,
         database:databaseJson.database
     });
 

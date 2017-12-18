@@ -2,6 +2,7 @@
  * 路由
  * */
 var fs = require('fs');
+var functions = require("./functions");
 
 function route(res, pathname)
 {
@@ -79,33 +80,7 @@ function handleController(res,pathname)
 {
     if(pathname.indexOf("getIfaces")>-1)
     {
-        var iface_arr = [{icon:"/public/images/ifaces/angrya_thumb.gif",title:"[怒]"},
-            {icon:"/public/images/ifaces/bs2_thumb.gif",title:"[鄙视你]"},
-            {icon:"/public/images/ifaces/bz_thumb.gif",title:"[闭嘴]"},
-            {icon:"/public/images/ifaces/cj_thumb.gif",title:"[吃惊]"},
-            {icon:"/public/images/ifaces/cry.gif",title:"[衰]"},
-            {icon:"/public/images/ifaces/hatea_thumb.gif",title:"[哼]"},
-            {icon:"/public/images/ifaces/heia_thumb.gif",title:"[偷笑]"},
-            {icon:"/public/images/ifaces/k_thumb.gif",title:"[打哈欠]"},
-            {icon:"/public/images/ifaces/kbsa_thumb.gif",title:"[扣鼻屎]"},
-            {icon:"/public/images/ifaces/kl_thumb.gif",title:"[可怜]"},
-            {icon:"/public/images/ifaces/laugh.gif",title:"[大笑]"},
-            {icon:"/public/images/ifaces/ldln_thumb.gif",title:"[懒得理你]"},
-            {icon:"/public/images/ifaces/lovea_thumb.gif",title:"[爱你]"},
-            {icon:"/public/images/ifaces/mb_thumb.gif",title:"[太开心]"},
-            {icon:"/public/images/ifaces/no_thumb.gif",title:"[不要]"},
-            {icon:"/public/images/ifaces/sada_thumb.gif",title:"[泪]"},
-            {icon:"/public/images/ifaces/sb_thumb.gif",title:"[生病]"},
-            {icon:"/public/images/ifaces/shamea_thumb.gif",title:"[害羞]"},
-            {icon:"/public/images/ifaces/shenshou_thumb.gif",title:"[神马]"},
-            {icon:"/public/images/ifaces/sleepa_thumb.gif",title:"[睡觉]"},
-            {icon:"/public/images/ifaces/smilea_thumb.gif",title:"[呵呵]"},
-            {icon:"/public/images/ifaces/t_thumb.gif",title:"[吐]"},
-            {icon:"/public/images/ifaces/tza_thumb.gif",title:"[可爱]"},
-            {icon:"/public/images/ifaces/wq_thumb.gif",title:"[委屈]"},
-            {icon:"/public/images/ifaces/x_thumb.gif",title:"[嘘]"},
-            {icon:"/public/images/ifaces/z2_thumb.gif",title:"[大赞]"},
-            {icon:"/public/images/ifaces/zy_thumb.gif",title:"[挤眼]"}];
+        var iface_arr = functions.readJsonFile("./config/ichatfaces.json",true);
 
         res.writeHead(200,{'Content-type':'text/plain;charset=UTF-8'});
         res.end(JSON.stringify(iface_arr));
